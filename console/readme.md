@@ -11,7 +11,6 @@ Kalian dapat mengerti cara menggunakan console method ini untuk mencari sebuah i
 
 ## Console Method
 
-
 ```bash
   console.info() -> digunakan untuk memberikan sebuah informasi
   console.warn() -> digunakan untuk memberi sebuah peringatan
