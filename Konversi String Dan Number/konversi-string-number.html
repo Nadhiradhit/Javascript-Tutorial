@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi string ke number</title>
+</head>
+<body>
+    
+    <script>
+        // Sebelum konversi
+        document.writeln("<p>Sebelum konversi</p>")
+        let value1 = "1"
+        let value2 = 1;
+        let sum = value1 + value2
+
+        document.writeln(`<p>${sum}</p>`)  // Hasil 11
+
+        // Setelah konversi
+        document.writeln("<p>Sesudah melakukan konversi</p>")
+        value1 = parseInt("1")
+        value2 = 1
+        sum = value1 + value2
+
+        document.writeln(`<p>${sum}</p>`) // Hasil 2
+
+        // Contoh pemakaian toString()
+        document.writeln("<p>toString()</p>")
+        const x = 5
+        const y = 10
+        const total = x.toString() + y.toString()
+        
+        document.writeln(`<p>${total}</p>`)
+
+        // Contoh Code NaN
+        document.writeln("<p>Data NaN</p>")
+        
+        document.writeln(`<p>${parseInt("salah")}</p>`) // NaN
+        document.writeln(`<p>${parseFloat("1.2halo")}</p>`) // 1.1
+
+        // Pada Number() Maka jika ada data string tidak akan mentolelir kesalahan pada sebuah data
+        document.writeln(`<p>${Number("Hello1.2")}</p>`)
+        document.writeln(`<p>${Number("5x")}</p>`)
+        document.writeln(`<p>${Number("Data ini adalah string")}</p>`)
+
+        // Contoh pengoperasian NaN
+        document.writeln("<p>pengoperasian NaN</p>")
+        const nan1 = Number("hasilnya NaN") // NaN
+        const nan2 = 200
+        const total2 = nan1 + nan2 // NaN
+
+        document.writeln(`<p>${total2}</p>`)
+
+    </script>
+
+</body>
+</html>
