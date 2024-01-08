@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    <script>
+
+        
+        const person = {}
+        // Add Object
+        person["name"] = "Nadhir Adhitya"
+        person["location"] = "Indonesia"
+        person["age"] = 20
+
+        // Delete Object
+        delete person["age"]
+
+        console.table(person)
+
+        // Use Properties + Object
+        const personFull = {
+            name: "Mulyadi Ahmad",
+            location : "Bogor",
+            age: 25
+        }
+
+        console.table(personFull)
+
+        // Access object properties
+        console.info(`Name: ${person.name}`)
+        console.info(`location: ${person.location}`)
+        console.info(`Age: ${person.age}`)
+    </script>
+</body>
+</html>
